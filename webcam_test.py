@@ -1,8 +1,6 @@
 # test the database server with an opencv webcam stream, posting jpeg images to the server at database 'db1', key 'image'
 import aiohttp
 import cv2
-import requests
-import time
 import numpy as np
 
 
@@ -50,7 +48,6 @@ async def webcam_server_test_asyncio():
 
 
 if __name__ == '__main__':
-    #webcam_server_test()
     import asyncio
     loop = asyncio.get_event_loop()
     loop.run_until_complete(webcam_server_test_asyncio())
